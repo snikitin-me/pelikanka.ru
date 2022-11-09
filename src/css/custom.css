@@ -1,0 +1,56 @@
+#services {
+  background-color: #fcf8f2;
+}
+
+.accordion-button{
+  font-size: x-large;
+}
+
+.accordion-button:not(.collapsed){
+  color: #000000;
+  background-color: #ffffff
+}
+
+.a-custom{
+  color: #ff8562
+}
+
+
+#navbarSupportedContent{
+  background-color: #ffffff;
+}
+
+.nav-link{
+  color: #000 !important
+}
+
+/********************  mentions  *********************/
+#mentions{
+  background-color: #fcf8f2;
+}
+
+#mentionsCarousel .carousel-caption {
+  text-align: left !important
+}
+
+#mentionsCarousel .bd-placeholder-img{
+  height: 300px;
+}
+
+#mentionsCarousel .bd-placeholder-img rect{
+  /* height: 500px */
+  fill: #fcf8f2 !important
+}
+
+/********************  mentions  *********************/
+#services .accordion-button:not(.collapsed){
+  /* color: #b4c589 !important; */
+  color: black !important; 
+  background-color: #ffffff !important;
+  font-size: x-large;
+}
+
+#BitrixForm{
+  background-image: url(/img/vetka_razmyito.jpg);
+  height: 100%;
+}
