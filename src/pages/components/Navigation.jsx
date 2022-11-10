@@ -47,6 +47,9 @@ export default function Navigation(props) {
                         <li className="nav-item">
                             <a className="nav-link" href="#price">Цены</a>
                         </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="/blog">Подкаст</a>
+                        </li>
                     </ul>
                     {/* <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
