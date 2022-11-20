@@ -60,3 +60,10 @@
 .navbar__link:hover, .navbar__link--active {
   color: #000 !important;
 }
+
+/* 
+TODO: Уменьшить ширину левого меню на 20%
+.sidebar_node_modules-@docusaurus-theme-classic-lib-theme-BlogSidebar-Desktop-styles-module {
+  width: 300px
+}
+ */

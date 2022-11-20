@@ -1,17 +1,11 @@
-endi:
-  name: Endilie Yacop Sucipto
-  title: Maintainer of Docusaurus
-  url: https://github.com/endiliey
-  image_url: https://github.com/endiliey.png
+polina:
+  name: Polina Nikitina
+  title: Педагог-психолог
+  url: https://vk.com/pelikanka
+  image_url: /img/avatarpolina.jpg
 
-yangshun:
-  name: Yangshun Tay
-  title: Front End Engineer @ Facebook
-  url: https://github.com/yangshun
-  image_url: https://github.com/yangshun.png
+darina:
+  name: Darina Nikitina
+  title: Ученица 2 класса
+  image_url: /img/avatardarina.jpg
 
-slorber:
-  name: Sébastien Lorber
-  title: Docusaurus maintainer
-  url: https://sebastienlorber.com
-  image_url: https://github.com/slorber.png
