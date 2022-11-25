@@ -73,21 +73,9 @@ const config = {
         //   src: 'img/logo.svg',
         // },
         items: [
-          // {
-          //   type: 'doc',
-          //   docId: 'intro',
-          //   position: 'left',
-          //   label: 'Tutorial',
-          // },
-
           { to: '/#about', label: 'Обо мне', position: 'left' },
           { to: '/#services', label: 'Услуги', position: 'left' },
           { to: '/#price', label: 'Цены', position: 'left' },
-          // {
-          //   href: 'https://github.com/facebook/docusaurus',
-          //   label: 'GitHub',
-          //   position: 'right',
-          // },
         ],
       },
       // footer: {
@@ -137,9 +125,18 @@ const config = {
       // },
       prism: {
         theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
-      },
+        //darkTheme: darkCodeTheme,
+      }
     }),
 };
+
+// menu not 
+// config.themeConfig = {
+//   colorMode: {
+//     defaultMode: 'light',
+//     disableSwitch: false,
+//     respectPrefersColorScheme: false,
+//   },
+// }
 
 module.exports = config;

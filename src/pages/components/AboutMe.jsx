@@ -6,7 +6,7 @@ export default function AboutMe(props) {
   return (
     <div id="about" class="container px-4 py-5 content-space-2 content-space-lg-3">
     <div class="row align-items-md-center">
-        <div class="col-md-5 d-none d-md-block">
+        <div class="col-md-5 d-block d-md-block">
             <img class="img-fluid rounded-2" src="./img/polina.jpg" alt=""/>
         </div>
         {/* <!-- End Col --> */}

@@ -1,63 +1,65 @@
-import React from 'react';
-import SocialLink from './SocialLink';
+import React, { useState } from 'react';
+// import Button from 'react-bootstrap/Button';
+import Offcanvas from 'react-bootstrap/Offcanvas';
+
+import SocialLink from "./SocialLink";
 
 export default function Navigation(props) {
-    // You can fully customize this implementation
-    // including changing the JSX, CSS and React hooks
+
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+    const menuItems = [
+        {text: "Обо мне", url: "#about"},
+        {text: "Услуги", url: "#services"},
+        {text: "Цены", url: "#price"},
+        {text: "Подкаст", url: "/blog"}
+    ];
+
     return (
-        // <nav className="navbar navbar-expand-lg sticky-top rounded" aria-label="Eleventh navbar example">
-        //     <div class="container-fluid">
-        //         <a class="navbar-brand" href="#">Navbar</a>
-        //         <button class="navbar-toggler" type="button" 
-        //             data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
-        //             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        //             <span class="navbar-toggler-icon"></span>
-        //         </button>
-        //         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        //             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-        //                 <li className="nav-item">
-        //                     <a className="nav-link active" aria-current="page" href="#about">Обо мне</a>
-        //                 </li>
-        //                 <li className="nav-item">
-        //                     <a className="nav-link" href="#services">Услуги</a>
-        //                 </li>
-        //                 <li className="nav-item">
-        //                     <a className="nav-link" href="#price">Цены</a>
-        //                 </li>
-        //             </ul>
-        //         </div>
-        //     </div>
-        // </nav>
-
-
+      <>
         <nav class="navbar navbar-expand-lg navbar-light sticky-top">
             <div class="container-fluid container-xxl">
-                {/* <a class="navbar-brand" href="#">Navbar</a> */}
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="#about">Обо мне</a>
+
+            <button onClick={handleShow} class="navbar-toggler" type="button"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    {menuItems.map((item, index) => (
+                        <li data-index={index} className="nav-item">
+                            <a className="nav-link" href={item.url}>{item.text}</a>
                         </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#services">Услуги</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#price">Цены</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="/blog">Подкаст</a>
-                        </li>
-                    </ul>
-                    {/* <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form> */}
-                    <SocialLink></SocialLink>
-                </div>
+                    ))}
+                    
+                </ul>
+                {/* <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form> */}
+                <SocialLink></SocialLink>
             </div>
-        </nav>
+        </div>
+    </nav>
+  
+        <Offcanvas show={show} onHide={handleClose}>
+          <Offcanvas.Header closeButton>
+            <Offcanvas.Title>Полина Никитина</Offcanvas.Title>
+          </Offcanvas.Header>
+          <Offcanvas.Body>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    {menuItems.map((item, index) => (
+                        <li data-index={index} className="nav-item">
+                            <a className="nav-link" href={item.url}>{item.text}</a>
+                        </li>
+                    ))}
+                </ul>
+          </Offcanvas.Body>
+        </Offcanvas>
+      </>
     );
 }
