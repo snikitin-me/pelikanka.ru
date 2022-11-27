@@ -4,17 +4,10 @@
         <title>Полина Никитина - педагог-психолог Blog</title>
         <link>http://pelikanka.ru/blog</link>
         <description>Полина Никитина - педагог-психолог Blog</description>
-        <lastBuildDate>Fri, 25 Nov 2022 18:24:45 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 20 Nov 2022 17:24:53 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[podcast]]></title>
-            <link>http://pelikanka.ru/blog/podcast</link>
-            <guid>/podcast</guid>
-            <pubDate>Fri, 25 Nov 2022 18:24:45 GMT</pubDate>
-            <content:encoded><![CDATA[<span style="background-color:#25c2a0;border-radius:2px;color:#fff;padding:0.2rem">Docusaurus green</span> and <span style="background-color:#1877F2;border-radius:2px;color:#fff;padding:0.2rem">Facebook blue</span> are my favorite colors.<p>I can write <strong>Markdown</strong> alongside my <em>JSX</em>!</p>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[Почему важно отвечать на детские вопросы?]]></title>
             <link>http://pelikanka.ru/blog/why-childrens-questions-is-important</link>
