@@ -26,7 +26,11 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
-
+  plugins: [
+    ['docusaurus-plugin-yandex-metrica', {
+      counterID: '91441853',
+    }],
+  ],
   // themes: ['@docusaurus/theme-bootstrap'],
   scripts: [
     "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
