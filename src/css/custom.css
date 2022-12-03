@@ -67,3 +67,12 @@ TODO: Уменьшить ширину левого меню на 20%
   width: 300px
 }
  */
+
+#__docusaurus article header {
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
+}
+
+.toggle_node_modules-\@docusaurus-theme-classic-lib-theme-ColorModeToggle-styles-module{
+  display: none !important;
+}

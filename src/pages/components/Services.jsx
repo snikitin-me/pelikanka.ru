@@ -21,11 +21,11 @@ export default function SolveProblem(props) {
             <div class="accordion">
                 <div class="accordion-item">
                 <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                     Трудности в поведение ребёнка
                     </button>
                 </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                         «Плохим» поведением ребенок пытается сообщить взрослым о какой-то проблеме, которая требует решения. Моя задача помочь родителям понять 
                         истинные причины возникновения у ребенка трудностей в поведении, определить вызвано ли данное поведение возрастным кризисом и дать рекомендации, 
