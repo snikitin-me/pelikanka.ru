@@ -82,6 +82,8 @@ export default function Navigation(props) {
                         ))}
                     </Nav.Item>
                 </Nav>
+                
+                <SocialLink></SocialLink>
           </Offcanvas.Body>
         </Offcanvas>
       </>
