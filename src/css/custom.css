@@ -55,6 +55,11 @@
   height: 100%;
 }
 
+#PageFooter{
+  background-image: url(/img/vetka_razmyito.jpg);
+  height: 900px;
+}
+
 /******************** BLOG *************************/
 
 .navbar__link:hover, .navbar__link--active {

@@ -10,6 +10,7 @@ import Price from './components/Price';
 import Prices from './components/Services';
 import Mentions from './components/Mentions';
 import BitrixForm from './components/BitrixForm'
+import PageFooter from './components/PageFooter';
 
 function ContainerExample() {
   const {siteConfig} = useDocusaurusContext();
@@ -26,7 +27,8 @@ function ContainerExample() {
       <Education></Education>
       <Prices></Prices>
       <Price></Price>
-      <BitrixForm></BitrixForm>
+      {/* <BitrixForm></BitrixForm> */}
+      <PageFooter></PageFooter>
     </div>
     // </ThemeProvider>
   );
