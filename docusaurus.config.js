@@ -30,6 +30,24 @@ const config = {
     ['docusaurus-plugin-yandex-metrica', {
       counterID: '91441853',
     }],
+    [
+      '@docusaurus/plugin-content-blog',
+      {
+        /**
+         * Required for any multi-instance plugin
+         */
+        id: 'podcast',
+        /**
+         * URL route for the blog section of your site.
+         * *DO NOT* include a trailing slash.
+         */
+        routeBasePath: 'podcast',
+        /**
+         * Path to data on filesystem relative to site dir.
+         */
+        path: './podcast',
+      }
+    ],
   ],
   // themes: ['@docusaurus/theme-bootstrap'],
   scripts: [
@@ -54,6 +72,13 @@ const config = {
         //   // Remove this to remove the "edit this page" links.
         //   editUrl:
         //     'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+        // },
+        // podcast: {
+        //   showReadingTime: true,
+        //   blogSidebarTitle: 'Статьи',
+        //   // Please change this to your repo.
+        //   // Remove this to remove the "edit this page" links.
+        //   // editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         // },
         blog: {
           showReadingTime: true,
@@ -83,7 +108,8 @@ const config = {
         // },
         items: [
           { to: '/#about', label: 'Обо мне', position: 'left' },
-          { to: '/blog', label: 'Подкаст', position: 'left' },
+          { to: '/blog', label: 'Блог', position: 'left' },
+          { to: '/podcast', label: 'Подкаст', position: 'left' },
           // { to: '/#services', label: 'Услуги', position: 'left' },
           // { to: '/#price', label: 'Цены', position: 'left' },
         ],

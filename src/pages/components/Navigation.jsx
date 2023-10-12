@@ -19,7 +19,8 @@ export default function Navigation(props) {
         {text: "Обо мне", url: "#about"},
         {text: "Услуги", url: "#services"},
         {text: "Цены", url: "#price"},
-        {text: "Подкаст", url: "/blog"}
+        {text: "Блог", url: "/blog"},
+        {text: "Подкаст", url: "/podcast"}
     ];
 
     return (
