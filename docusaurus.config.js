@@ -73,20 +73,19 @@ const config = {
         //   editUrl:
         //     'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         // },
-        // podcast: {
-        //   showReadingTime: true,
-        //   blogSidebarTitle: 'Статьи',
-        //   // Please change this to your repo.
-        //   // Remove this to remove the "edit this page" links.
-        //   // editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        // },
         blog: {
           showReadingTime: true,
-          blogSidebarTitle: 'Выпуски',
+          blogSidebarTitle: 'Статьи',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           // editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
+        // FIXME: how to configure multiple blog? 
+        // https://docusaurus.io/docs/blog#multiple-blogs
+        // podcast: {
+        //   showReadingTime: true,
+        //   blogSidebarTitle: 'Выпуски',
+        // },
         theme: {
           customCss: [
             require.resolve('./src/css/custom.css'),

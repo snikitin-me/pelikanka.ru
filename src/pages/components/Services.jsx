@@ -50,11 +50,11 @@ export default function SolveProblem(props) {
 
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingAnxiety">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAnxiety" aria-expanded="false" aria-controls="collapseTwo">
                         Тревожность ребёнка
                         </button>
                     </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingAnxiety" data-bs-parent="#accordionExample">
+                    <div id="collapseAnxiety" class="accordion-collapse collapse" aria-labelledby="headingAnxiety" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
                         Тревожность у детей может быть обусловлена различными факторами и иметь разные проявления. Важно понимать, что тревожность у детей является нормальной реакцией на стрессовые ситуации или изменения в их жизни. Однако, если тревожность становится чрезмерной или мешает ребенку нормально функционировать, может потребоваться помощь и поддержка.
                         <br/>
